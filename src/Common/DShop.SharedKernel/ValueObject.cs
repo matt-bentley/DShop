@@ -17,7 +17,6 @@ namespace DShop.SharedKernel
 		}
 
 		protected abstract bool ValueEquals(T other);
-		protected abstract IEnumerable<object> GetEqualityComponents();
 
 		public static bool operator ==(ValueObject<T> a, ValueObject<T> b)
 		{
