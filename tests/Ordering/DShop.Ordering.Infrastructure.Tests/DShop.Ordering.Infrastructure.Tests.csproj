@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="FluentAssertions" Version="6.2.0" />
+	  <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.7" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.7" />
+    <PackageReference Include="coverlet.collector" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Ordering\DShop.Ordering.Application\DShop.Ordering.Application.csproj" />
+    <ProjectReference Include="..\..\..\src\Ordering\DShop.Ordering.Core\DShop.Ordering.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Ordering\DShop.Ordering.Infrastructure\DShop.Ordering.Infrastructure.csproj" />
+    <ProjectReference Include="..\DShop.Ordering.Core.Tests\DShop.Ordering.Core.Tests.csproj" />
+  </ItemGroup>
+
+</Project>
